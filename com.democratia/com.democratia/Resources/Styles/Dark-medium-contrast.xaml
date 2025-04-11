@@ -1,0 +1,57 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?> 
+<ResourceDictionary 
+        xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"> 
+
+		 <Color x:Key="primary">#FFD2CD</Color> 
+		 <Color x:Key="surfaceTint">#FFB4AC</Color> 
+		 <Color x:Key="onPrimary">#481310</Color> 
+		 <Color x:Key="primaryContainer">#CC7B73</Color> 
+		 <Color x:Key="onPrimaryContainer">#000000</Color> 
+		 <Color x:Key="secondary">#FED2CE</Color> 
+		 <Color x:Key="onSecondary">#381F1C</Color> 
+		 <Color x:Key="secondaryContainer">#AD8884</Color> 
+		 <Color x:Key="onSecondaryContainer">#000000</Color> 
+		 <Color x:Key="tertiary">#F7D8A0</Color> 
+		 <Color x:Key="onTertiary">#332300</Color> 
+		 <Color x:Key="tertiaryContainer">#A88D5B</Color> 
+		 <Color x:Key="onTertiaryContainer">#000000</Color> 
+		 <Color x:Key="error">#FFD2CC</Color> 
+		 <Color x:Key="onError">#540003</Color> 
+		 <Color x:Key="errorContainer">#FF5449</Color> 
+		 <Color x:Key="onErrorContainer">#000000</Color> 
+		 <Color x:Key="background">#1A1110</Color> 
+		 <Color x:Key="onBackground">#F1DEDC</Color> 
+		 <Color x:Key="surface">#1A1110</Color> 
+		 <Color x:Key="onSurface">#FFFFFF</Color> 
+		 <Color x:Key="surfaceVariant">#534341</Color> 
+		 <Color x:Key="onSurfaceVariant">#EED7D5</Color> 
+		 <Color x:Key="outline">#C2ADAB</Color> 
+		 <Color x:Key="outlineVariant">#9F8C8A</Color> 
+		 <Color x:Key="shadow">#000000</Color> 
+		 <Color x:Key="scrim">#000000</Color> 
+		 <Color x:Key="inverseSurface">#F1DEDC</Color> 
+		 <Color x:Key="inverseOnSurface">#322826</Color> 
+		 <Color x:Key="inversePrimary">#743530</Color> 
+		 <Color x:Key="primaryFixed">#FFDAD6</Color> 
+		 <Color x:Key="onPrimaryFixed">#2C0102</Color> 
+		 <Color x:Key="primaryFixedDim">#FFB4AC</Color> 
+		 <Color x:Key="onPrimaryFixedVariant">#5E231F</Color> 
+		 <Color x:Key="secondaryFixed">#FFDAD6</Color> 
+		 <Color x:Key="onSecondaryFixed">#200B09</Color> 
+		 <Color x:Key="secondaryFixedDim">#E7BDB8</Color> 
+		 <Color x:Key="onSecondaryFixedVariant">#4B2F2C</Color> 
+		 <Color x:Key="tertiaryFixed">#FEDEA6</Color> 
+		 <Color x:Key="onTertiaryFixed">#190F00</Color> 
+		 <Color x:Key="tertiaryFixedDim">#E0C38C</Color> 
+		 <Color x:Key="onTertiaryFixedVariant">#463309</Color> 
+		 <Color x:Key="surfaceDim">#1A1110</Color> 
+		 <Color x:Key="surfaceBright">#4D4240</Color> 
+		 <Color x:Key="surfaceContainerLowest">#0D0605</Color> 
+		 <Color x:Key="surfaceContainerLow">#251B1A</Color> 
+		 <Color x:Key="surfaceContainer">#302524</Color> 
+		 <Color x:Key="surfaceContainerHigh">#3B302F</Color> 
+		 <Color x:Key="surfaceContainerHighest">#463B3A</Color> 
+</ResourceDictionary>

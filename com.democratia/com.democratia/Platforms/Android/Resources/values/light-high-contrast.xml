@@ -1,0 +1,53 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources> 
+		 <color name="primary">#511A16</color> 
+		 <color name="surfaceTint">#904A44</color> 
+		 <color name="onPrimary">#FFFFFF</color> 
+		 <color name="primaryContainer">#763631</color> 
+		 <color name="onPrimaryContainer">#FFFFFF</color> 
+		 <color name="secondary">#3F2523</color> 
+		 <color name="onSecondary">#FFFFFF</color> 
+		 <color name="secondaryContainer">#60423E</color> 
+		 <color name="onSecondaryContainer">#FFFFFF</color> 
+		 <color name="tertiary">#3B2902</color> 
+		 <color name="onTertiary">#FFFFFF</color> 
+		 <color name="tertiaryContainer">#5B461B</color> 
+		 <color name="onTertiaryContainer">#FFFFFF</color> 
+		 <color name="error">#600004</color> 
+		 <color name="onError">#FFFFFF</color> 
+		 <color name="errorContainer">#98000A</color> 
+		 <color name="onErrorContainer">#FFFFFF</color> 
+		 <color name="background">#FFF8F7</color> 
+		 <color name="onBackground">#231918</color> 
+		 <color name="surface">#FFF8F7</color> 
+		 <color name="onSurface">#000000</color> 
+		 <color name="surfaceVariant">#F5DDDB</color> 
+		 <color name="onSurfaceVariant">#000000</color> 
+		 <color name="outline">#362927</color> 
+		 <color name="outlineVariant">#554544</color> 
+		 <color name="shadow">#000000</color> 
+		 <color name="scrim">#000000</color> 
+		 <color name="inverseSurface">#392E2D</color> 
+		 <color name="inverseOnSurface">#FFFFFF</color> 
+		 <color name="inversePrimary">#FFB4AC</color> 
+		 <color name="primaryFixed">#763631</color> 
+		 <color name="onPrimaryFixed">#FFFFFF</color> 
+		 <color name="primaryFixedDim">#59201C</color> 
+		 <color name="onPrimaryFixedVariant">#FFFFFF</color> 
+		 <color name="secondaryFixed">#60423E</color> 
+		 <color name="onSecondaryFixed">#FFFFFF</color> 
+		 <color name="secondaryFixedDim">#472C29</color> 
+		 <color name="onSecondaryFixedVariant">#FFFFFF</color> 
+		 <color name="tertiaryFixed">#5B461B</color> 
+		 <color name="onTertiaryFixed">#FFFFFF</color> 
+		 <color name="tertiaryFixedDim">#423006</color> 
+		 <color name="onTertiaryFixedVariant">#FFFFFF</color> 
+		 <color name="surfaceDim">#C6B5B3</color> 
+		 <color name="surfaceBright">#FFF8F7</color> 
+		 <color name="surfaceContainerLowest">#FFFFFF</color> 
+		 <color name="surfaceContainerLow">#FFEDEA</color> 
+		 <color name="surfaceContainer">#F1DEDC</color> 
+		 <color name="surfaceContainerHigh">#E2D0CE</color> 
+		 <color name="surfaceContainerHighest">#D4C3C1</color> 
+</resources>

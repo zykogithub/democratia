@@ -57,3 +57,5 @@ nunit-*.xml
 
 /modelisation
 /api
+com.democratia/com.democratia/Resources/Styles/adaptateur.py
+com.democratia/com.democratia/Resources/Styles/material-theme.json

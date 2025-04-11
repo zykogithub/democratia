@@ -1,12 +1,10 @@
-﻿namespace com.democratia
+﻿namespace com.democratia;
+
+public partial class MainPage : ContentPage
 {
-    public partial class MainPage : ContentPage
+
+    public MainPage()
     {
-
-        public MainPage()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
-
 }
