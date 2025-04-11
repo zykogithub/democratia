@@ -40,6 +40,8 @@ ScaffoldingReadMe.txt
 ~$*
 *~
 CodeCoverage/
+.vs
+com.democratia/com.democratia/Properties/
 
 # MSBuild Binary and Structured Log
 *.binlog
@@ -52,3 +54,6 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+/modelisation
+/api
