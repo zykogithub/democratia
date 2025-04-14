@@ -1,5 +1,4 @@
-﻿
-namespace com.democratia;
+﻿namespace com.democratia;
 
 public partial class MainPage : ContentPage
 {

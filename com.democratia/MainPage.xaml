@@ -1,9 +1,108 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:com.democratia"
              x:Class="com.democratia.MainPage">
 
-    
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Label Text="ActivityIndicator" />
+            <ActivityIndicator IsRunning="True" Style="{StaticResource ActivityIndicatorStyle}" />
 
+            <Label Text="IndicatorView" />
+            <IndicatorView IndicatorColor="Gray" SelectedIndicatorColor="Black" Style="{StaticResource IndicatorViewStyle}" />
+
+            <Label Text="Border" />
+            <Border Style="{StaticResource BorderStyle}">
+                <Label Text="Border Content" />
+            </Border>
+
+            <Label Text="BoxView" />
+            <BoxView HeightRequest="50" WidthRequest="50" Style="{StaticResource BoxViewStyle}" />
+
+            <Label Text="Button" />
+            <Button Text="Button" Style="{StaticResource ButtonStyle}" />
+
+            <Label Text="CheckBox" />
+            <CheckBox IsChecked="True" Style="{StaticResource CheckBoxStyle}" />
+
+            <Label Text="DatePicker" />
+            <DatePicker Style="{StaticResource DatePickerStyle}" />
+
+            <Label Text="Editor" />
+            <Editor Placeholder="Editor" Style="{StaticResource EditorStyle}" />
+
+            <Label Text="Entry" />
+            <Entry Placeholder="Entry" Style="{StaticResource EntryStyle}" />
+
+            <Label Text="Frame" />
+            <Frame Style="{StaticResource FrameStyle}">
+                <Label Text="Frame Content" />
+            </Frame>
+
+            <Label Text="ImageButton" />
+            <ImageButton Source="icon.png" Style="{StaticResource ImageButtonStyle}" />
+
+            <Label Text="Label" />
+            <Label Text="Label" Style="{StaticResource LabelStyle}" />
+
+            <Label Text="Headline" Style="{StaticResource HeadlineStyle}" />
+            <Label Text="SubHeadline" Style="{StaticResource SubHeadlineStyle}" />
+
+            <Label Text="ListView" />
+            <ListView Style="{StaticResource ListViewStyle}">
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Item 1</x:String>
+                        <x:String>Item 2</x:String>
+                        <x:String>Item 3</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
+
+            <Label Text="Picker" />
+            <Picker Style="{StaticResource PickerStyle}">
+                <Picker.Items>
+                    <x:String>Option 1</x:String>
+                    <x:String>Option 2</x:String>
+                    <x:String>Option 3</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="ProgressBar" />
+            <ProgressBar Progress="0.5" Style="{StaticResource ProgressBarStyle}" />
+
+            <Label Text="RadioButton" />
+            <RadioButton Content="RadioButton" IsChecked="True" Style="{StaticResource RadioButtonStyle}" />
+
+            <Label Text="RefreshView" />
+            <RefreshView Style="{StaticResource RefreshViewStyle}">
+                <Label Text="Pull to Refresh" />
+            </RefreshView>
+
+            <Label Text="SearchBar" />
+            <SearchBar Placeholder="Search" Style="{StaticResource SearchBarStyle}" />
+
+            <Label Text="Slider" />
+            <Slider Value="0.5" Style="{StaticResource SliderStyle}" />
+
+           
+
+            <Label Text="Switch" />
+            <Switch IsToggled="True" Style="{StaticResource SwitchStyle}" />
+
+            <Label Text="Span" />
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Span Text" Style="{StaticResource SpanStyle}" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            
+
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
  

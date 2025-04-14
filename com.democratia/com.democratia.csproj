@@ -67,4 +67,10 @@
 	  <Folder Include="ViewModels\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Resources\Styles\Colors.xaml.cs">
+	    <DependentUpon>Colors.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
 </Project>
