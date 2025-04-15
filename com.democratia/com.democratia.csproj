@@ -57,6 +57,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Remove="Essaie.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="9.0.0" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -68,9 +73,27 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="RenduComposant.xaml.cs">
+	    <DependentUpon>RenduComposant.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Resources\Styles\Colors.xaml.cs">
 	    <DependentUpon>Colors.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\Creation.xaml.cs">
+	    <DependentUpon>Creation.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Home.xaml.cs">
+	    <DependentUpon>Home.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="RenduComposant.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Home.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

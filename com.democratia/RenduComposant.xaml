@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:com.democratia"
+             x:Class="com.democratia.NewPage1"
+             >
+
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Label Text="ActivityIndicator" />
+            <ActivityIndicator IsRunning="True" Style="{DynamicResource ActivityIndicatorStyle}" />
+
+            <Label Text="IndicatorView" />
+            <IndicatorView IndicatorColor="Gray" SelectedIndicatorColor="Black" Style="{DynamicResource IndicatorViewStyle}" />
+
+            <Label Text="Border" />
+            <Border Style="{DynamicResource BorderStyle}">
+                <Label Text="Border Content" />
+            </Border>
+
+            <Label Text="BoxView" />
+            <BoxView HeightRequest="50" WidthRequest="50" Style="{DynamicResource BoxViewStyle}" />
+
+            <Label Text="Button" />
+            <Button Text="Button" Style="{DynamicResource ButtonStyle}" />
+
+            <Label Text="CheckBox" />
+            <CheckBox IsChecked="True" Style="{DynamicResource CheckBoxStyle}" />
+
+            <Label Text="DatePicker" />
+            <DatePicker Style="{DynamicResource DatePickerStyle}" />
+
+            <Label Text="Editor" />
+            <Editor Placeholder="Editor" Style="{DynamicResource EditorStyle}" />
+
+            <Label Text="Entry" />
+            <Entry Placeholder="Entry" Style="{DynamicResource EntryStyle}" />
+
+            <Label Text="Frame" />
+            <Frame Style="{DynamicResource FrameStyle}">
+                <Label Text="Frame Content" />
+            </Frame>
+
+            <Label Text="ImageButton" />
+            <ImageButton Source="icon.png" Style="{DynamicResource ImageButtonStyle}" />
+
+            <Label Text="Label" />
+            <Label Text="Label" Style="{DynamicResource LabelStyle}" />
+
+            <Label Text="Headline" Style="{DynamicResource HeadlineStyle}" />
+            <Label Text="SubHeadline" Style="{DynamicResource SubHeadlineStyle}" />
+
+            <Label Text="ListView" />
+            <ListView Style="{DynamicResource ListViewStyle}">
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Item 1</x:String>
+                        <x:String>Item 2</x:String>
+                        <x:String>Item 3</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
+
+            <Label Text="Picker" />
+            <Picker Style="{DynamicResource PickerStyle}">
+                <Picker.Items>
+                    <x:String>Option 1</x:String>
+                    <x:String>Option 2</x:String>
+                    <x:String>Option 3</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="ProgressBar" />
+            <ProgressBar Progress="0.5" Style="{DynamicResource ProgressBarStyle}" />
+
+            <Label Text="RadioButton" />
+            <RadioButton Content="RadioButton" IsChecked="True" Style="{DynamicResource RadioButtonStyle}" />
+
+            <Label Text="RefreshView" />
+            <RefreshView Style="{DynamicResource RefreshViewStyle}">
+                <Label Text="Pull to Refresh" />
+            </RefreshView>
+
+            <Label Text="SearchBar" />
+            <SearchBar Placeholder="Search" Style="{DynamicResource SearchBarStyle}" />
+
+            <Label Text="Slider" />
+            <Slider Value="0.5" Style="{DynamicResource SliderStyle}" />
+
+
+
+            <Label Text="Switch" />
+            <Switch IsToggled="True" Style="{DynamicResource SwitchStyle}" />
+
+            <Label Text="Span" />
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Span Text" Style="{DynamicResource SpanStyle}" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
+ 
