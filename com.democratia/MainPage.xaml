@@ -74,15 +74,16 @@
             
             <HorizontalStackLayout
                 HorizontalOptions="Center"
-                Margin="0,350,0,0"
-                Spacing="30">
+                Spacing="30"
+                VerticalOptions="End"
+                >
                 <Label
                     x:Name="pasDeCompteLabel"
                     Text="Pas de compte ?"
                     Style="{DynamicResource LabelStyle}"
                     HorizontalOptions="Center"
                 />
-                <Label Text="Aller à la page suivante"
+                <Label Text="Créez en un !"
                     TextColor="Blue"
                     x:Name="pageSuivanteLabel"
                     HorizontalOptions="Center"
@@ -101,6 +102,7 @@
                 MaximumWidthRequest="200"
                 MaximumHeightRequest="50"
                 Clicked="OnNavigateTapped"
+                VerticalOptions="End"
             />
         </StackLayout>
     </ScrollView>
