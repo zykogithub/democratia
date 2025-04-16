@@ -79,11 +79,20 @@
 	  <Compile Update="Resources\Styles\Colors.xaml.cs">
 	    <DependentUpon>Colors.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Views\Creation.xaml.cs">
+	  <Compile Update="Views\Component\Header.xaml.cs">
+	    <DependentUpon>Header.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Pages\Creation.xaml.cs">
 	    <DependentUpon>Creation.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Views\Home.xaml.cs">
+	  <Compile Update="Views\Pages\Home.xaml.cs">
 	    <DependentUpon>Home.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Component\BackButton.xaml.cs">
+	    <DependentUpon>BackButton.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Component\SwitchButton.xaml.cs">
+	    <DependentUpon>SwitchButton.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
@@ -91,7 +100,16 @@
 	  <MauiXaml Update="RenduComposant.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Home.xaml">
+	  <MauiXaml Update="Views\Component\Header.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\Home.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Component\BackButton.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Component\SwitchButton.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

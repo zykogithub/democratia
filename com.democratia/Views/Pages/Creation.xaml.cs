@@ -1,4 +1,4 @@
-namespace com.democratia.Views;
+namespace com.democratia.Views.Pages;
 
 
 public partial class Creation : ContentPage
