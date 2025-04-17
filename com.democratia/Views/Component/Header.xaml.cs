@@ -1,12 +1,15 @@
 namespace com.democratia.Views.Component;
 
+
+
 public partial class Header : ContentView
 {
-	public Header()
-	{
-		InitializeComponent();
+    public Header()
+    {
+        InitializeComponent();
         SetTheme();
-	}
+    }
+
 
     private async void OnClicked(object sender, EventArgs e)
     {
@@ -24,7 +27,7 @@ public partial class Header : ContentView
                 button.Source = "dark.png";
             }
         }
-        else if (button ==  backButton)
+        else if (button == backButton)
         {
             if (Navigation.NavigationStack.Count > 0)
             {
@@ -36,6 +39,7 @@ public partial class Header : ContentView
             await Navigation.PopToRootAsync();
         }
     }
+
     private void SetTheme()
     {
         if (Application.Current.RequestedTheme == AppTheme.Dark)
