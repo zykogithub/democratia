@@ -31,7 +31,7 @@
 
                 <component:EntryComponent Title="Adresse mail" x:Name="mailComponant" />
 
-                <component:EntryComponent Title="Mot de passe" x:Name="passwordComponant"/>
+                <component:EntryComponent Title="Mot de passe" x:Name="passwordComponant" passWord="True"/>
 
                 <HorizontalStackLayout
                     HorizontalOptions="Center"
