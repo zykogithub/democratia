@@ -8,13 +8,30 @@
              >
 
     <ScrollView>
-        <StackLayout Padding="10">
-            <component:Header/>
-            <Label
-                Text="Votre prénom"
-                x:Name="prenomLabel"
-                Style="{DynamicResource SubHeadlineStyle}"/>
-        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+        <component:Header Grid.Row="0"/>
+        
+        <StackLayout Padding="10" Grid.Row="1">
+            <BoxView HeightRequest="50"/>
+            <component:EntryComponent Title="Nom de Famille" x:Name="nomDeFamilleComponent"/>
+            <component:EntryComponent Title="Prénom" x:Name="prenomComponent"/>
+            <component:EntryComponent Title="Adresse Postale" x:Name="addresseComponent"/>
+            <component:EntryComponent Title="Adresse mail" x:Name="mailComponent"/>
+            <component:EntryComponent Title="Mot de passe" passWord="True" x:Name="passwordComponent"/>
+            <BoxView HeightRequest="100"/>
+                <Button
+                Text="M'inscrire"
+                x:Name="inscriptionButton"
+                Style="{DynamicResource ButtonStyle}"
+                MaximumWidthRequest="300"
+                />
+            </StackLayout>
+        </Grid>
     </ScrollView>
 </ContentPage>
  

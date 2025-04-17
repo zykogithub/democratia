@@ -88,12 +88,6 @@
 	  <Compile Update="Views\Pages\Home.xaml.cs">
 	    <DependentUpon>Home.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Views\Component\BackButton.xaml.cs">
-	    <DependentUpon>BackButton.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Update="Views\Component\SwitchButton.xaml.cs">
-	    <DependentUpon>SwitchButton.xaml</DependentUpon>
-	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -103,13 +97,10 @@
 	  <MauiXaml Update="Views\Component\Header.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Component\NewContent1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Pages\Home.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Component\BackButton.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Component\SwitchButton.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

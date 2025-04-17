@@ -8,95 +8,66 @@
              >
 
     <ScrollView>
-        <StackLayout Padding="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <component:Header Grid.Row="0"/>
+            
+            <StackLayout Padding="10" Grid.Row="1">
+                
+                <BoxView HeightRequest="15"/>
 
-            <component:Header/>
-            
-            <Image
-                Source="logo.png"
-                x:Name="logoImage"
-                MaximumWidthRequest="50"
-                MaximumHeightRequest="50"
-                VerticalOptions="End"
-                />
-            
-            <BoxView HeightRequest="15"/>
-            
-            <Label
-                x:Name="seConnecterLabel"
-                Style="{DynamicResource LabelStyle}"
-                Text="Se connecter"
-                HorizontalOptions="Center"
-            />
-            
-            <BoxView HeightRequest="30"/>
-            <Label
-                Text="Bon retour parimis nous !"
-                Style="{DynamicResource HeadlineStyle}"
-                x:Name="retourLabel"
-                />
-            <BoxView HeightRequest="30"/>
-            <Label
-                x:Name="mailLabel"
-                Text="Adresse mail"
-                Style="{DynamicResource SubHeadlineStyle}"
-                HorizontalOptions="Center"
-                />
-            <BoxView HeightRequest="30"/>
-            <Entry
-                x:Name="mailEntry"
-                Style="{DynamicResource EntryStyle}"
-                MaximumWidthRequest="300"                
-                />
-            <BoxView HeightRequest="30"/>
-            <Label
-                x:Name="motDePasseLabel"
-                Text="Mot de passe"
-                Style="{DynamicResource SubHeadlineStyle}"
-                HorizontalOptions="Center"
-            />
-            <BoxView HeightRequest="30"/>
-
-            <Entry
-                x:Name="nomDeFamilleEntry"
-                Style="{DynamicResource EntryStyle}"
-                MaximumWidthRequest="300"
-                IsPassword="True"
-            />
-            
-            <HorizontalStackLayout
-                HorizontalOptions="Center"
-                Spacing="30"
-                VerticalOptions="End"
-                >
                 <Label
-                    x:Name="pasDeCompteLabel"
-                    Text="Pas de compte ?"
+                    x:Name="seConnecterLabel"
                     Style="{DynamicResource LabelStyle}"
+                    Text="Se connecter"
                     HorizontalOptions="Center"
                 />
-                <Label Text="Créez en un !"
-                    TextColor="Blue"
-                    x:Name="pageSuivanteLabel"
+
+                <BoxView HeightRequest="30"/>
+
+                <component:EntryComponent Title="Adresse mail" x:Name="mailComponant" />
+
+                <component:EntryComponent Title="Mot de passe" x:Name="passwordComponant"/>
+
+                <HorizontalStackLayout
                     HorizontalOptions="Center"
-                    TextDecorations="Underline">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer
-                            Tapped="OnNavigateTapped" />
-                    </Label.GestureRecognizers>
-                </Label>
-            </HorizontalStackLayout>
-            <BoxView HeightRequest="30"/>
-            <Button
-                x:Name="seConnecterButton"
-                Text="Se connecter"
-                Style="{DynamicResource ButtonStyle}"
-                MaximumWidthRequest="200"
-                MaximumHeightRequest="50"
-                Clicked="OnNavigateTapped"
-                VerticalOptions="End"
-            />
-        </StackLayout>
+                    Spacing="30"
+                    VerticalOptions="End">
+                    <Label
+                        x:Name="pasDeCompteLabel"
+                        Text="Pas de compte ?"
+                        Style="{DynamicResource LabelStyle}"
+                        HorizontalOptions="Center"
+                    />
+
+                    <Label Text="Créez en un !"
+                        TextColor="Blue"
+                        x:Name="pageSuivanteLabel"
+                        HorizontalOptions="Center"
+                        TextDecorations="Underline">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnNavigateTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </HorizontalStackLayout>
+
+                <BoxView HeightRequest="30"/>
+
+                <Button
+                    x:Name="seConnecterButton"
+                    Text="Se connecter"
+                    Style="{DynamicResource ButtonStyle}"
+                    MaximumWidthRequest="200"
+                    MaximumHeightRequest="50"
+                    Clicked="OnNavigateTapped"
+                    VerticalOptions="End"
+                />
+            </StackLayout>
+        </Grid>
     </ScrollView>
 </ContentPage>
  
