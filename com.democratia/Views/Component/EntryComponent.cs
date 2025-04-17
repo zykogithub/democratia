@@ -80,7 +80,7 @@ public partial class EntryComponent : ContentView
         if (Content is VerticalStackLayout layout && layout.Children[2] is Entry entry)
         {
             entry.TextChanged += OnTitleChanged;
-            entry.IsPassword = _passWord
+            entry.IsPassword = _passWord;
         }
     }
 
