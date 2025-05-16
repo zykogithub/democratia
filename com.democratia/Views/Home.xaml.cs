@@ -1,4 +1,4 @@
-namespace com.democratia.Views.Pages;
+namespace com.democratia.Views;
 
 public partial class Home : ContentPage
 {

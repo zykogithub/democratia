@@ -1,6 +1,4 @@
-namespace com.democratia.Views.Component;
-using com.democratia.Resources.Styles;
-
+namespace com.democratia.Component;
 
 public partial class EntryComponent : ContentView
 {

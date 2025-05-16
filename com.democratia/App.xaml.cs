@@ -1,6 +1,4 @@
-﻿using com.democratia.Resources.Styles;
-
-namespace com.democratia
+﻿namespace com.democratia
 {
     public partial class App : Application
     {
@@ -8,9 +6,14 @@ namespace com.democratia
         {
             
             InitializeComponent();
-            MainPage = new AppShell();
         }
 
-        
+        protected override Window CreateWindow(IActivationState? activationState)
+        {
+            return new Window(new AppShell());
+        }
+
+
+
     }
 }

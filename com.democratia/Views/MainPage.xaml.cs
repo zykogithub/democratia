@@ -1,13 +1,7 @@
-﻿using com.democratia.Utils;
-using com.democratia.Views.Pages;
-using System.Diagnostics;
-
-
-namespace com.democratia;
+﻿namespace com.democratia.Views;
 
 public partial class MainPage : ContentPage
 {
-    
 
     public MainPage()
     {
@@ -26,5 +20,4 @@ public partial class MainPage : ContentPage
             await Navigation.PushAsync(new Home());
         }
     }
-
 }

@@ -374,6 +374,7 @@
             </VisualStateGroupList>
         </Setter>
     </Style>
+    <FontImageSource x:Key="Icon" FontFamily="FontAwesomeSolid" Glyph="&#xf2b9;" Size="20" Color="{AppThemeBinding Light={DynamicResource Light-primary}, Dark={DynamicResource Dark-primary}}"/>
 
-   
+
 </ResourceDictionary>

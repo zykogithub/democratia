@@ -19,6 +19,7 @@ namespace com.democratia
 
 #if DEBUG
             builder.Logging.AddDebug();
+            builder.Services.AddLogging(configure => configure.AddDebug());
 #endif
 
             return builder.Build();

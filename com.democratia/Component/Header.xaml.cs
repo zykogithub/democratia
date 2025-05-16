@@ -1,6 +1,4 @@
-namespace com.democratia.Views.Component;
-
-
+namespace com.democratia.Component;
 
 public partial class Header : ContentView
 {
