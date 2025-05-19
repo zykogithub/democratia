@@ -8,6 +8,7 @@ namespace com.democratia
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
+#if ANDROID || IOS || WINDOWS || MACCATALYST || TIZEN
             builder
                 .UseMauiApp<App>()
                 .UseMauiCommunityToolkit()
@@ -16,6 +17,7 @@ namespace com.democratia
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+#endif
 
 #if DEBUG
             builder.Logging.AddDebug();

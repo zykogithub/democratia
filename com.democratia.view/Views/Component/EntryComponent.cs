@@ -2,7 +2,7 @@ namespace com.democratia.Views.Component;
 
 public partial class EntryComponent : ContentView
 {
-    private string _title;
+    private string? _title;
     
     private bool _passWord;
 
@@ -81,7 +81,7 @@ public partial class EntryComponent : ContentView
         }
     }
 
-    private void OnTitleChanged(object sender, TextChangedEventArgs e)
+    private void OnTitleChanged(object? sender, TextChangedEventArgs e)
     {
         if (sender is Entry entry)
         {

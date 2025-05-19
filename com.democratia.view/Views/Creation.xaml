@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:com.democratia.Views"
              xmlns:component="clr-namespace:com.democratia.Views.Component"
-             xmlns:viewModel="clr-namespace:com.democratia.ViewModels"
+             xmlns:viewModel="clr-namespace:com.democratia.ViewModels;assembly=com.democratia.core"
              x:Class="com.democratia.Views.Creation"
              Style="{DynamicResource fondEcran}"
              >
