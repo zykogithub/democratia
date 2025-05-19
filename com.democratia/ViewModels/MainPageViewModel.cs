@@ -9,7 +9,6 @@ namespace com.democratia.ViewModels
         [RelayCommand]
         public static async Task NavigateTapped(string commande)
         {
-            Debug.WriteLine("hello");
             try
             {
                 if (Shell.Current.CurrentItem?.Route != commande) await Shell.Current.GoToAsync(commande);
