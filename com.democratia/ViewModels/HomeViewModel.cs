@@ -1,6 +1,8 @@
 ﻿namespace com.democratia.ViewModels
 {
-    internal class HomeViewModel
+    
+    public partial class HomeViewModel
     {
+
     }
 }

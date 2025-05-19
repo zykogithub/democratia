@@ -3,9 +3,23 @@ namespace com.democratia.Views.Component;
 public partial class EntryComponent : ContentView
 {
     private string _title;
-    private string _valeurDonne;
+    
     private bool _passWord;
 
+
+    public static readonly BindableProperty ValeurDonneProperty = BindableProperty.Create(
+    nameof(ValeurDonne),
+    typeof(string),
+    typeof(EntryComponent),
+    default(string),
+    BindingMode.TwoWay
+);
+
+    public string ValeurDonne
+    {
+        get => (string)GetValue(ValeurDonneProperty);
+        set => SetValue(ValeurDonneProperty, value);
+    }
     // Propriété publique pour passer un paramètre  
     public string Title
     {
@@ -21,18 +35,7 @@ public partial class EntryComponent : ContentView
         }
     }
 
-    public string valeurDonne
-    {
-        get => _valeurDonne;
-        set
-        {
-            // Met à jour le paramètre si nécessaire  
-            if (Content is VerticalStackLayout layout && layout.Children[2] is Entry)
-            {
-                _valeurDonne = value;
-            }
-        }
-    }
+    
 
     public bool? passWord
     {
@@ -50,35 +53,31 @@ public partial class EntryComponent : ContentView
 
     public EntryComponent()
     {
-        Content = new VerticalStackLayout
-        {
+        Content = new VerticalStackLayout {
             Children = {
-               new Label {
-                   HorizontalOptions = LayoutOptions.Center,
-                   Text = _title,
-                   Style = (Style)Application.Current.Resources["SubHeadlineStyle"]
-               },
-               new BoxView
-               {
-                   HeightRequest = 30
-               },
-               new Entry
-               {
-                   Style = (Style)Application.Current.Resources["EntryStyle"],
-                   MaximumWidthRequest = 300,
-               },
-               new BoxView
-               {
-                   HeightRequest = 30
-               }
-           }
+              new Label {
+                  HorizontalOptions = LayoutOptions.Center,
+                  Text = _title,
+                  Style = (Style?)Application.Current?.Resources["SubHeadlineStyle"],
+              },
+              new BoxView {
+                  HeightRequest = 30
+              },
+              new Entry {
+                    Style = (Style?)Application.Current?.Resources["EntryStyle"],
+                    MaximumWidthRequest = 300,
+              },
+              new BoxView {
+                  HeightRequest = 30
+              }
+            }
         };
 
         // Ajout de l'abonnement à l'événement TextChanged  
-        if (Content is VerticalStackLayout layout && layout.Children[2] is Entry entry)
+        if (Content is VerticalStackLayout layout && layout.Children[2] is Entry entryControl)
         {
-            entry.TextChanged += OnTitleChanged;
-            entry.IsPassword = _passWord;
+            entryControl.TextChanged += OnTitleChanged;
+            entryControl.IsPassword = _passWord;
         }
     }
 
@@ -86,7 +85,7 @@ public partial class EntryComponent : ContentView
     {
         if (sender is Entry entry)
         {
-            _valeurDonne = e.NewTextValue;
+            ValeurDonne = e.NewTextValue;
         }
     }
 }

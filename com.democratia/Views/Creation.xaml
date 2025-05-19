@@ -3,11 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:com.democratia.Views"
              xmlns:component="clr-namespace:com.democratia.Views.Component"
+             xmlns:viewModel="clr-namespace:com.democratia.ViewModels"
              x:Class="com.democratia.Views.Creation"
              Style="{DynamicResource fondEcran}"
              >
+    <ContentPage.BindingContext>
+        <viewModel:CreationViewModel/>
+    </ContentPage.BindingContext>
 
-    <ScrollView>
+        <ScrollView>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -18,17 +22,18 @@
         
         <StackLayout Padding="10" Grid.Row="1">
             <BoxView HeightRequest="50"/>
-            <component:EntryComponent Title="Nom de Famille" x:Name="nomDeFamilleComponent"/>
-            <component:EntryComponent Title="Prénom" x:Name="prenomComponent"/>
-            <component:EntryComponent Title="Adresse Postale" x:Name="addresseComponent"/>
-            <component:EntryComponent Title="Adresse mail" x:Name="mailComponent"/>
-            <component:EntryComponent Title="Mot de passe" passWord="True" x:Name="passwordComponent"/>
+            <component:EntryComponent Title="Nom de Famille" x:Name="nomDeFamilleComponent" ValeurDonne="{Binding NomDeFamille}"/>
+                <component:EntryComponent Title="Prénom" x:Name="prenomComponent" ValeurDonne="{Binding Prenom}"/>
+                <component:EntryComponent Title="Adresse Postale" x:Name="addresseComponent" ValeurDonne="{Binding AdressePostal}"/>
+                <component:EntryComponent Title="Adresse mail" x:Name="mailComponent" ValeurDonne="{Binding AdresseMail}"/>
+                <component:EntryComponent Title="Mot de passe" passWord="True" x:Name="passwordComponent" ValeurDonne="{Binding MotDePasse}"/>
             <BoxView HeightRequest="100"/>
                 <Button
                 Text="M'inscrire"
                 x:Name="inscriptionButton"
                 Style="{DynamicResource ButtonStyle}"
                 MaximumWidthRequest="300"
+                Command="{Binding InscriptionCommand}"
                 />
             </StackLayout>
         </Grid>
