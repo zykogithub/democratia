@@ -1,6 +1,25 @@
-﻿namespace com.democratia.ViewModels
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using System.Diagnostics;
+
+namespace com.democratia.ViewModels
 {
-    internal class MainPageViewModel
+    public partial class MainPageViewModel : ObservableObject
     {
+        [RelayCommand]
+        public static async Task NavigateTapped(string commande)
+        {
+            Debug.WriteLine("hello");
+            try
+            {
+                if (Shell.Current.CurrentItem?.Route != commande) await Shell.Current.GoToAsync(commande);
+                
+            }
+            catch (Exception ex)
+            {
+                Application.Current?.Windows[0]?.Page?.DisplayAlert("Error",$"Erreur lors de la navigation : {ex.Message}","OK");
+            }
+        }
+
     }
 }
