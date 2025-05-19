@@ -2,10 +2,12 @@
 
 namespace com.democratia.test.ModelsTest
 {
-    internal class UserTest
+    public class UserTest
     {
-        public UserTest() { 
-        User user = new User();
+        [Fact]
+        public void Test()
+        {
+            Assert.False(true);
         }
     }
 }
