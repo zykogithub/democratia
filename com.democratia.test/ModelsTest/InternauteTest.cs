@@ -2,7 +2,8 @@
 
 namespace com.democratia.test.ModelsTest
 {
-    public class UserTest
+    
+    public class InternauteTest
     {
         [Fact]
         public void Test()

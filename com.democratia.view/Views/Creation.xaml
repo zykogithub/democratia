@@ -5,6 +5,7 @@
              xmlns:component="clr-namespace:com.democratia.Views.Component"
              xmlns:viewModel="clr-namespace:com.democratia.ViewModels;assembly=com.democratia.core"
              x:Class="com.democratia.Views.Creation"
+             x:DataType="viewModel:CreationViewModel"
              Style="{DynamicResource fondEcran}"
              >
     <ContentPage.BindingContext>
@@ -26,7 +27,7 @@
                 <component:EntryComponent Title="Prénom" x:Name="prenomComponent" ValeurDonne="{Binding Prenom}"/>
                 <component:EntryComponent Title="Adresse Postale" x:Name="addresseComponent" ValeurDonne="{Binding AdressePostal}"/>
                 <component:EntryComponent Title="Adresse mail" x:Name="mailComponent" ValeurDonne="{Binding AdresseMail}"/>
-                <component:EntryComponent Title="Mot de passe" passWord="True" x:Name="passwordComponent" ValeurDonne="{Binding MotDePasse}"/>
+                <component:EntryComponent Title="Mot de passe" PassWord="True" x:Name="passwordComponent" ValeurDonne="{Binding MotDePasse}"/>
             <BoxView HeightRequest="100"/>
                 <Button
                 Text="M'inscrire"

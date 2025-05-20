@@ -37,7 +37,7 @@
 
                 <component:EntryComponent Title="Adresse mail" x:Name="mailComponant" ValeurDonne="{Binding AdresseMail}" />
 
-                <component:EntryComponent Title="Mot de passe" x:Name="passwordComponant" passWord="True" ValeurDonne="{Binding MotDePasse}"/>
+                <component:EntryComponent Title="Mot de passe" x:Name="passwordComponant" PassWord="True" ValeurDonne="{Binding MotDePasse}"/>
 
                 <HorizontalStackLayout
                     HorizontalOptions="Center"

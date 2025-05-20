@@ -8,10 +8,10 @@ namespace com.democratia.ViewModels
     {
 
         [ObservableProperty]
-        private string adresseMail ;
+        private string? adresseMail ;
 
         [ObservableProperty]
-        private string motDePasse ;
+        private string? motDePasse ;
 
         [RelayCommand]
         public static async Task NavigateTapped(string commande)

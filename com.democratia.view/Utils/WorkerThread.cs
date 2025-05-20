@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel;
-using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
@@ -18,7 +17,7 @@ namespace com.democratia.Utils
         private readonly Object?[]? parameters;
         private readonly Action<object>? onFinish;
         private readonly Action? onCanel;
-        private BackgroundWorker backgroundWorker;
+        private readonly BackgroundWorker backgroundWorker;
         private readonly Action<object?, ProgressChangedEventArgs>? onProgression;
 
 
@@ -118,7 +117,7 @@ namespace com.democratia.Utils
                 var paramElementType = parameters.Last().ParameterType.GetElementType()!;
                 var paramArgs = flatArgs?.Skip(fixedCount).ToArray();
 
-                var paramArray = Array.CreateInstance(paramElementType, paramArgs.Length);
+                var paramArray = paramArgs != null ? Array.CreateInstance(paramElementType, paramArgs.Length) : throw new NullReferenceException("référencement null");
                 for (int i = 0; i < paramArgs.Length; i++)
                     paramArray.SetValue(paramArgs[i], i);
 

@@ -1,6 +1,7 @@
 ﻿namespace com.democratia.Models
 {
-    public class User
+    
+    public class Internaute
     {
     }
 }

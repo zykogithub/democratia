@@ -4,7 +4,7 @@ public partial class EntryComponent : ContentView
 {
     private string? _title;
     
-    private bool _passWord;
+    private bool? _passWord;
 
 
     public static readonly BindableProperty ValeurDonneProperty = BindableProperty.Create(
@@ -21,7 +21,7 @@ public partial class EntryComponent : ContentView
         set => SetValue(ValeurDonneProperty, value);
     }
     // Propriété publique pour passer un paramètre  
-    public string Title
+    public string? Title
     {
         get => _title;
         set
@@ -37,16 +37,16 @@ public partial class EntryComponent : ContentView
 
     
 
-    public bool? passWord
+    public bool? PassWord
     {
         get => _passWord;
         set
         {
-            _passWord = (bool)value;
+            _passWord = value;
             // Met à jour le texte du Label si nécessaire  
             if (Content is VerticalStackLayout layout && layout.Children[2] is Entry entry)
             {
-                entry.IsPassword = _passWord;
+                entry.IsPassword = (bool)_passWord;
             }
         }
     }
@@ -77,13 +77,12 @@ public partial class EntryComponent : ContentView
         if (Content is VerticalStackLayout layout && layout.Children[2] is Entry entryControl)
         {
             entryControl.TextChanged += OnTitleChanged;
-            entryControl.IsPassword = _passWord;
         }
     }
 
     private void OnTitleChanged(object? sender, TextChangedEventArgs e)
     {
-        if (sender is Entry entry)
+        if (sender is Entry)
         {
             ValeurDonne = e.NewTextValue;
         }
